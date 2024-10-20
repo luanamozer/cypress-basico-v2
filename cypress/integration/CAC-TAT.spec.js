@@ -125,7 +125,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         .should('have.value', 'blog') 
     })
 
-    // marcando inputs do tipo radio button (seleçao unica)
+    // marcando inputs do tipo radio button (seleçao unica)ts
 
     it('marca um unico tipo de atendimento "Feedback"', function(){
         cy.get('input[type="radio"][value="feedback"]')
