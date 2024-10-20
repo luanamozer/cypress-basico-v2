@@ -32,6 +32,10 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', function(){
 
     cy.get('#open-text-area').type('teste')
 
-    cy.get('button[type="submit"]').click()
+    // cy.get('button[type="submit"]').click()
+
+    // selecionando o elemento usando o contains ao inves de get. Primerio argumento é o seletor (button) o segundo argumento é o texto contido nele (Enviar)
+
+    cy.contains('button', 'Enviar').click() 
 
 })
